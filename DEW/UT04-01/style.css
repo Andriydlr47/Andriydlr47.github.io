@@ -1,0 +1,36 @@
+input{
+    color: rgba(0, 0, 0, 0.6);
+}
+#datosUsuario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+#datosPersonales{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#datosPublicacion{
+    display: flex;
+    flex-direction: column;
+}
+.campo1{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2em;
+}
+.campo2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 0.6em;
+}
+.campo3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 0.6em;
+}
+
+
+

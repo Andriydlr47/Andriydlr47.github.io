@@ -1,7 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pagedfngcfffgfs.</p>
+    <form action="https://www.w3schools.com/action_page.php">
+
+        <fieldset id="datosUsuario">
+            <legend>Datos de usuario</legend>
+
+            <div class="campo1">
+                <label for="nombreUsuario">Nombre de usuario</label>
+                <input required="required" type="text" name="nombreUsuario" id="nombreUsuario" placeholder="UserName">
+            </div>
+            <div class="campo1">
+                <label for="Contraseña">Contraseña</label>
+                <input required="required" type="password" name="Contraseña" id="Contraseña" placeholder="Introduce contraseña">
+            </div>
+            <div class="campo2">
+                <input type="checkbox" name="mostrarContraseña" id="mostrarContraseña">
+                <label for="mostrarContraseña">Mostrar Contraseña</label>
+            </div>
+        </fieldset>
+
+        <fieldset id="datosPersonales">
+            <legend>Datos personales</legend>
+
+            <div class="campo1">
+                <label for="nombre">Nombre</label>
+                <input required="required" type="text" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="campo1">
+                <label for="apellidos">Apellidos</label>
+                <input required="required" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+            </div>
+            <div class="campo1">
+                <label for="telefono">Telefono</label>
+                <input required="required" type="tel" name="telefono" id="telefono" placeholder="Ejem_ (+34)922123123">
+            </div>
+            <div class="campo1">
+                <label for="condigoPostal">Código postal</label>
+                <input required="required" type="text" name="condigoPostal" id="condigoPostal" placeholder="38XXX">
+            </div>
+            <div class="campo3">
+                <div class="campoDNI-NIE">
+                    <label for="DNI-NIE">DNI/NIE</label>
+                    <div>
+                        <select name="DNI-NIE" id="DNI-NIE">
+                            <option value="DNI">DNI</option>
+                            <option value="NIE">NIE</option>
+                        </select>
+                        <input required="required" type="text" name="escribeDNI-NIE" id="escribeDNI-NIE" placeholder="DNI/NIE">
+                    </div>
+                </div>
+                <div class="campo1">
+                    <label for="spanCrear">Crear cuneta como:</label>
+                    <span name="spanCrear">
+                        <input type="radio" name="crearCuenta" id="Particular">
+                        <label for="Particular">Particular</label>
+                        <input type="radio" name="crearCuenta" id="Empresa">
+                        <label for="Empresa">Empresa</label>
+                    </span>
+                </div>
+                <div class="campo1">
+                    <label for="anioNacimiento">Año de Nacimiento</label>
+                    <select name="anioNacimiento" id="anioNacimiento">
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                    </select>
+                </div>
+            </div>
+            <label for="elegirAficion">Elige tus aficiones</label>
+            <span name="elegirAficion" id="elegirAficion" class="campo3">
+                <div>
+                    <input type="checkbox" name="musica" id="musica">
+                    <label for="musica">Musica</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="deporte" id="deporte">
+                    <label for="deporte">Deporte</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="vidoeJuegos" id="videoJuegos">
+                    <label for="videoJuegos">Video Juegos</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="manualidades" id="manualidades">
+                    <label for="manualidades">Manualidades</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="artes" id="artes">
+                    <label for="artes">Artes</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lectura" id="lectura">
+                    <label for="lectura">Lectura</label>
+                </div>
+            </span>
+        </fieldset>
+
+        <fieldset id="datosPublicacion">
+            <legend>Datos publicación</legend>
+
+            <div class="campo1">
+                <label for="titulo">Titulo</label>
+                <input required="required" type="text" name="titulo" id="titulo" placeholder="titulo" minlength="0" maxlength="15">
+            </div>
+            <div class="campo1">
+                <label for="apellidos">Descripcion</label>
+                <textarea required="required" name="descripcion" id="descripcion" minlength="0" maxlength="120"></textarea>
+            </div>            
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
+
 </html>
