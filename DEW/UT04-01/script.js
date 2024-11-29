@@ -13,15 +13,6 @@ document.getElementById("mostrarContrasena").addEventListener("change", function
         passwordInput.type = "password";
     }
 })
-document.getElementById("mostrarContrasena").addEventListener("change", function (){
-    const passwordInput = document.getElementById('contrasena');
-    if (this.checked) {
-        passwordInput.type = "text";
-    }
-    else {
-        passwordInput.type = "password";
-    }
-})
 
 function conteoTitulo() {
     const titleInput = document.getElementById('titulo');
