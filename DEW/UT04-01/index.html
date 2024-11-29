@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
-</head>
+<link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cauce_cookie.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-base.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-evagd.js"></script></head>
 
 <body>
     <form action="https://www.w3schools.com/action_page.php">
@@ -19,12 +19,12 @@
                 <input required="required" type="text" name="nombreUsuario" id="nombreUsuario" placeholder="UserName">
             </div>
             <div class="campo1">
-                <label for="Contraseña">Contraseña</label>
-                <input required="required" type="password" name="Contraseña" id="Contraseña" placeholder="Introduce contraseña">
+                <label for="contrasena">Contraseña</label>
+                <input required="required" type="password" name="contrasena" id="contrasena" placeholder="Introduce contraseña">
             </div>
             <div class="campo2">
-                <input type="checkbox" name="mostrarContraseña" id="mostrarContraseña">
-                <label for="mostrarContraseña">Mostrar Contraseña</label>
+                <input type="checkbox" name="mostrarContrasena" id="mostrarContrasena">
+                <label for="mostrarContrasena">Mostrar Contraseña</label>
             </div>
         </fieldset>
 
@@ -115,17 +115,18 @@
         <fieldset id="datosPublicacion">
             <legend>Datos publicación</legend>
 
-            <div class="campo1">
+            <div id="tituloDiv" class="campo1">
                 <label for="titulo">Titulo</label>
-                <input required="required" type="text" name="titulo" id="titulo" placeholder="titulo" minlength="0" maxlength="15">
+                <input oninput="conteoTitulo()" required="required" type="text" name="titulo" id="titulo" placeholder="titulo" minlength="0" maxlength="15">
             </div>
-            <div class="campo1">
+            <div id="descripcionDiv" class="campo1">
                 <label for="apellidos">Descripcion</label>
-                <textarea required="required" name="descripcion" id="descripcion" minlength="0" maxlength="120"></textarea>
+                <textarea oninput="conteoDescripcion()" required="required" name="descripcion" id="descripcion" minlength="0" maxlength="120"></textarea>
             </div>            
         </fieldset>
         <button type="submit">Enviar</button>
     </form>
+    <script src="./script.js"></script>
 </body>
 
 </html>
